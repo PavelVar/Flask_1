@@ -1,0 +1,132 @@
+#customers-info-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#customers-heading {
+  margin: 0px 15px;
+}
+
+.card {
+  width: 298px;
+  margin: 0px 15px;
+}
+
+.customer-card__text {
+  background: #e2e2e2;
+  border-radius: 7px;
+  padding: 10px 20px;
+  margin-bottom: 22px;
+}
+
+.customer-card__text {
+  transition: 0.2s;
+}
+
+.customer-card__text:hover {
+  transform: scale(1.02);
+}
+
+.customer-card__text p {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.card-signature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.customer__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.customer__img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.customer__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job p {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 1);
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#customers-card-1-text {
+  position: relative;
+}
+
+#customers-card-1-text::after {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 100%;
+  border: 10px solid transparent;
+  border-top: 10px solid #e2e2e2;
+}
+
+#customers-card-2-text {
+  position: relative;
+}
+
+#customers-card-2-text::after {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 100%;
+  border: 10px solid transparent;
+  border-top: 10px solid #e2e2e2;
+}
+
+#customers-card-3-text {
+  position: relative;
+}
+
+#customers-card-3-text::after {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 100%;
+  border: 10px solid transparent;
+  border-top: 10px solid #e2e2e2;
+}
+
+@media (max-width: 1024px) {
+  #customers-card-chef {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #customers-card-chef {
+    display: none;
+  }
+  .card {
+    width: 220px;
+    margin: 0px 10px;
+  }
+}

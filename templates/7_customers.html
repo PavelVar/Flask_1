@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Customers page
+{% endblock %}
+
+{% block body %}
+<section class="section" id="customers-section">
+      <div class="container" id="customers-container-head">
+        <div class="heading" id="customers-heading">
+          <h2 class="heading__title" id="customers-head-title">
+            What our customers are saying
+          </h2>
+
+          <div
+            class="heading__underline-text"
+            id="customers-head-underline-text"
+          >
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="info-cards" id="customers-info">
+          <div class="info__wrap" id="customers-info-wrap">
+            <div class="card" id="customers-card-ken">
+              <div class="customer-card__content">
+                <div class="customer-card__text" id="customers-card-ken-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, voluptatem iure. Optio sapiente officiis suscipit
+                    aperiam fugit impedit, minima quisquam cum?
+                  </p>
+                </div>
+                <div class="card-signature">
+                  <div class="customer__img" id="customers-card-ken-img">
+                    <a href="https://www.pinterest.ru/pin/431782683009424080/"
+                      ><img src="https://kartinkin.net/uploads/posts/2022-03/1647063284_1-kartinkin-net-p-kenni-kartinki-1.jpg" alt="Kenny"
+                    /></a>
+                  </div>
+                  <div class="signature">
+                    <h3 class="card__title" id="customers-card-ken-name">
+                      Jeremy H.
+                    </h3>
+                    <div class="job"><p>Manager</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="customers-card-cartman">
+              <div class="customer-card__content">
+                <div
+                  class="customer-card__text"
+                  id="customers-card-cartman-text"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, voluptatem iure. Optio sapiente officiis suscipit
+                    aperiam fugit impedit, minima quisquam cum?
+                  </p>
+                </div>
+                <div class="card-signature">
+                  <div class="customer__img" id="customers-card-cartman-img">
+                    <a href="https://media.2x2tv.ru/best-cartman-moments/"
+                      ><img src="../static/img/cart.png" alt="Cartman"
+                    /></a>
+                  </div>
+                  <div class="signature">
+                    <h3 class="card__title" id="customers-card-cartman-name">
+                      Jeremy H.
+                    </h3>
+                    <div class="job"><p>Manager</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="customers-card-chef">
+              <div class="customer-card__content">
+                <div class="customer-card__text" id="customers-card-chef-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, voluptatem iure. Optio sapiente officiis suscipit
+                    aperiam fugit impedit, minima quisquam cum?
+                  </p>
+                </div>
+                <div class="card-signature">
+                  <div class="customer__img" id="customers-card-chef-img">
+                    <a
+                      href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D1%84_(%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%9F%D0%B0%D1%80%D0%BA)"
+                      ><img src="../static/img/chef.png" alt="Chef"
+                    /></a>
+                  </div>
+                  <div class="signature">
+                    <h3 class="card__title" id="customers-card-chef-name">
+                      Jeremy H.
+                    </h3>
+                    <div class="job"><p>Manager</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

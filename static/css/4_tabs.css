@@ -1,0 +1,143 @@
+.section {
+}
+.container {
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0px 15px;
+}
+
+.tab {
+  width: 112px;
+  height: 110px;
+  border-radius: 4px;
+  margin-top: 10px;
+  position: relative;
+  background-color: rgba(51, 51, 51, 1);
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 1);
+}
+
+.tab-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 15;
+}
+
+.tab:first-child {
+  margin-top: 0px;
+}
+
+.tab:hover {
+  background-color: rgba(236, 121, 121, 1);
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+
+.tabs-text-wrap {
+  padding: 0px 15px;
+  width: 572px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+#content_1:before {
+  content: "";
+  width: 114px;
+  height: 110px;
+  border-radius: 4px;
+  background-color: rgba(236, 121, 121, 1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(14px, 0%);
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#content_2:before {
+  content: "";
+  width: 114px;
+  height: 110px;
+  border-radius: 4px;
+  background-color: rgba(236, 121, 121, 1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(14px, calc(100% + 10px));
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#content_3:before {
+  content: "";
+  width: 114px;
+  height: 110px;
+  border-radius: 4px;
+  background-color: rgba(236, 121, 121, 1);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(14px, calc(200% + 20px));
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.tabs-head {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Open Sans";
+  font-style: 20px;
+  font-weight: 700;
+}
+
+.tabs-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: 14px;
+}
+
+#tabs-button {
+  margin: 0px;
+  border: none;
+  line-height: 42px;
+  width: 166px;
+}
+
+.picture {
+  width: 320px;
+  height: 253px;
+  border: none;
+  overflow: hidden;
+  padding: 0px 15px;
+}
+
+#tabs-page-img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  object-position: center;
+}
+
+.tabs-text-wrap:target {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .picture {
+    display: none;
+  }
+}

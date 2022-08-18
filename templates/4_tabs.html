@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Customers page
+{% endblock %}
+
+{% block body %}
+
+<section class="section" id="tabs-section">
+      <div class="container" id="tabs-section-container">
+        <div class="wrap" id="tabs-section-wrap">
+            <div class="tabs">
+
+              <a href="#content_1" class="tab" id="first-tab"><span class="tab-name" >Tab 1</span></a>
+              <a href="#content_2" class="tab" id="second-tab"><span class="tab-name" >Tab 2</span></a>
+              <a href="#content_3" class="tab" id="third-tab"><span class="tab-name" >Tab 3</span></a>
+            </div>
+
+            <div class="tabs-text-wrap" id="content_1">
+              <h2 class="tabs-head">Tabs with soft transitioning effect #1</h2>
+              <div class="tabs-text" id="tab-core-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quis voluptatem obcaecati praesentium quo debitis ullam amet similique possimus impedit, sint saepe temporibus esse animi expedita consequuntur optio alias! Sapiente?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, beatae. Inventore, enim.</p>
+              </div>
+              <button class="button" id="tabs-button">Download</button>
+            </div>
+
+            <div class="tabs-text-wrap" id="content_2">
+              <h2 class="tabs-head">Tabs with soft transitioning effect #2</h2>
+              <div class="tabs-text" id="tab-core-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quis voluptatem obcaecati praesentium quo debitis ullam amet similique possimus impedit, sint saepe temporibus esse animi expedita consequuntur optio alias! Sapiente?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, beatae. Inventore, enim.</p>
+              </div>
+              <button class="button" id="tabs-button">Download</button>
+            </div>
+
+            <div class="tabs-text-wrap" id="content_3">
+              <h2 class="tabs-head">Tabs with soft transitioning effect #3</h2>
+              <div class="tabs-text" id="tab-core-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quis voluptatem obcaecati praesentium quo debitis ullam amet similique possimus impedit, sint saepe temporibus esse animi expedita consequuntur optio alias! Sapiente?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, beatae. Inventore, enim.</p>
+              </div>
+              <button class="button" id="tabs-button">Download</button>
+            </div>
+
+          <div class="picture" id="tabs-section-picture">
+            <img src="../static/img/tab-pic.png" alt="nice picture" id="tabs-page-img">
+          </div>
+
+        </div>
+      </div>
+    </section>
+{% endblock %}

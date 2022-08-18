@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+All articles list
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Все статьи</h1>
+
+    {% if articles|length > 0 %}
+
+        {% for article in articles %}
+        <div class="alert alert-info">
+            <h2>{{article.title}}</h2>
+            <p>{{article.intro}}</p>
+            <p>Дата: {{article.date}}</p>
+            <p>{{article.date.date()}}</p>
+            <a href="/posts/{{article.id}}" class="btn btn-success">Вся статья</a>
+            <a class="btn btn-danger" href="/posts/{{ article.id }}/delete">Delete article</a>
+            <a class="btn btn-warning" href="/posts/{{ article.id }}/update">Update article</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>There are no articles here</p>
+    {% endif %}
+
+</div>
+{% endblock %}
